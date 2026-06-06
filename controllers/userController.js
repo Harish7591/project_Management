@@ -2,7 +2,7 @@ const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 
 
-// CREATE DEVELOPER
+// CREATE DEVELOPERS
 exports.createDeveloper = async (req, res) => {
   try {
 
