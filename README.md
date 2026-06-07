@@ -2,9 +2,7 @@
 
 ## Overview
 
-This is the backend service for the Project Management System. It provides APIs for authentication, project management, developer management, and task management.
-
----
+Backend service for the Project Management System. Provides APIs for authentication, project management, developer management, and task management.
 
 ## Tech Stack
 
@@ -14,38 +12,6 @@ This is the backend service for the Project Management System. It provides APIs 
 * Mongoose
 * JWT Authentication
 * bcrypt
-
----
-
-## Features
-
-### Authentication
-
-* Admin Login
-* Developer Login
-* JWT Token Generation
-* Protected APIs
-
-### Project Management
-
-* Create Project
-* Update Project
-* Delete Project
-* View Projects
-
-### Developer Management
-
-* Add Developers
-* Update Developers
-* Delete Developers
-* View Developers
-
-### Task Management
-
-* Create Tasks
-* Assign Tasks to Developers
-* Update Task Status
-* View Task Details
 
 ---
 
@@ -69,6 +35,16 @@ cd project-management-backend
 npm install
 ```
 
+### Environment Variables
+
+Create a `.env` file in the root directory and add the required environment variables:
+
+```env
+PORT=5000
+MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
+JWT_SECRET=YOUR_JWT_SECRET
+```
+
 ### Create Admin User
 
 Before starting the server, create the initial admin account:
@@ -83,26 +59,18 @@ node createAdmin.js
 npm run dev
 ```
 
-Backend server will start successfully after the admin account is created.
-
 ---
+
+## Main Modules
+
+* Authentication
+* Projects
+* Developers
+* Tasks
 
 ## Database
 
 * MongoDB Atlas
-* Cloud-hosted database
-* Stores Admin, Developers, Projects, and Tasks
-
----
-
-## API Modules
-
-* Authentication APIs
-* Project APIs
-* Developer APIs
-* Task APIs
-
----
 
 ## Author
 
